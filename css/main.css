@@ -84,3 +84,14 @@ li.option {
     left: 0;
     right: 10%;
 }
+
+.client-title {
+    padding: 20px 0;
+    font-size: 3vw;
+
+}
+
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}

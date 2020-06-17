@@ -1,5 +1,31 @@
 body {
-    font-family: balboa, sans-serif;
+    font-family: Balboa, poppins, sans-serif;
     font-style: normal;
     font-weight: 700;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.home {
+    background-color: orange;
+    /* height: 900px; */
+}
+
+.poppins-title {
+    font-family: Poppins;
+    font-size: 4vw;
+}
+
+li.option {
+    padding-left: 20px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-image {
+    margin-right: -15px;
+    padding: 50px 0 50px 0;
 }

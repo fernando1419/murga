@@ -95,3 +95,22 @@ li.option {
     border: 0 none;
     box-shadow: none;
 }
+
+.who {
+    background-color: #212529;
+    padding-top: 20px;
+}
+
+.who-title {
+    padding: 20px 0;
+    color: white;
+    font-size: 3vw;
+}
+
+.card.who {
+    background-color: #314148;
+}
+
+.card-body h4.card-title {
+    color: orange;
+}

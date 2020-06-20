@@ -7,10 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murga Landing Page</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/colorbox.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Examples of how to assign the Colorbox event to elements
+            $(".youtube").colorbox({
+                iframe: true,
+                innerWidth: 560,
+                innerHeight: 315
+            });
+            $(".vimeo").colorbox({
+                iframe: true,
+                innerWidth: 500,
+                innerHeight: 409
+            });
+            $(".iframe").colorbox({
+                iframe: true,
+                width: "60%",
+                height: "80%"
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -18,7 +42,7 @@
     <div class="container-fluid">
 
         <!-- Navbar (Header) -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-color navbar-dark">
             <a href="javascript: void(0)" class="navbar-left">
                 <img src="images/logo.png" class="img-fluid" alt="Logo">
             </a>
@@ -28,19 +52,29 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item option">
-                        <a class="nav-link active" href="javascript: void(0)">SERVICIOS</a>
+                        <a class="nav-link" href="javascript: void(0)">
+                            <span class="navbar-item">SERVICIOS</span>
+                        </a>
                     </li>
                     <li class="nav-item option">
-                        <a class="nav-link active" href="javascript: void(0)">CATÁLOGO</a>
+                        <a class="nav-link" href="javascript: void(0)">
+                            <span class="navbar-item">CATÁLOGO</span>
+                        </a>
                     </li>
                     <li class="nav-item option">
-                        <a class="nav-link active" href="javascript: void(0)">CLIENTES</span></a>
+                        <a class="nav-link" href="javascript: void(0)">
+                            <span class="navbar-item">CLIENTES</span>
+                        </a>
                     </li>
                     <li class="nav-item option">
-                        <a class="nav-link active" href="javascript: void(0)">QUIÉNES SOMOS</span></a>
+                        <a class="nav-link" href="javascript: void(0)">
+                            <span class="navbar-item">QUIÉNES SOMOS</span>
+                        </a>
                     </li>
                     <li class="nav-item option">
-                        <a class="nav-link active" href="javascript: void(0)">CONTACTO</span></a>
+                        <a class="nav-link" href="javascript: void(0)">
+                            <span class="navbar-item">CONTACTO</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +83,7 @@
         <!-- Home Section -->
         <div class="home row align-items-center">
             <div class="col-5">
-                <p class="poppins-title">Boutique</p>
+                <p class="boutique-font">Boutique</p>
                 <p class="poppins-title">Creativa</p>
                 <p class="poppins-subtitle">
                     Nos dedicamos al desarrollo de proyectos, la implementación de soluciones de producción
@@ -92,99 +126,160 @@
         </div>
 
         <!-- Nuestros Destacados Section -->
-        <div class="home row align-items-center">
+        <div class="destacados">
+            <div class="row text-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
+                    <p class="destacados-title">Nuestros Destacados</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 pl-5 pr-5">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="iframe" href="https://player.vimeo.com/video/320003036?autoplay=1"
+                        title="El Mundo de Mateo">
+                        <img src="images/destacados/serie1.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="iframe" href="https://player.vimeo.com/video/197502875?autoplay=1"
+                        title="Esteros en Foco">
+                        <img src="images/destacados/serie2.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="vimeo" href="https://player.vimeo.com/video/107261244?autoplay=1" title="Volver a nacer">
+                        <img src="images/destacados/serie3.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="vimeo" href="https://player.vimeo.com/video/69386535?autoplay=1" title="Jorge">
+                        <img src="images/destacados/serie4.jpg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-4 pl-5 pr-5">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="vimeo" href="https://player.vimeo.com/video/151549050?autoplay=1"
+                        title="Tierra de rufianes">
+                        <img src="images/destacados/serie5.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="youtube" href="https://www.youtube.com/embed/2yrcQlPlCW4?autoplay=1" title="Freddy">
+                        <img src="images/destacados/serie6.jpg" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="youtube" href="https://www.youtube.com/embed/bu_lbMZrJNQ?autoplay=1" title="Broder">
+                        <img src="images/destacados/serie7.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <a class="vimeo" href="https://player.vimeo.com/video/228847395?autoplay=1"
+                        title="Latin American Foodie">
+                        <img src="images/destacados/serie8.jpg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center pt-5 pb-5">
+                <a href="https://we.tl/t-8NwlUcFg6T" target="_blank" class="descargar pl-4 pr-4">Descargar Catálogo</a>
+            </div>
+
         </div>
 
         <!-- Clients Section -->
-        <div class="row text-center">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <p class="client-title">Clientes</p>
+        <div class="clients">
+            <div class="row text-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p class="client-title">Clientes</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <!-- <a href="http://canal22.com" class="thumbnail"> -->
-                <img src="images/clientes/cliente01.png" class="img-thumbnail">
-                <!-- </a> -->
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente01.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente02.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente03.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente04.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente05.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente06.png" class="img-thumbnail">
+                </div>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente02.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente03.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente04.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente05.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente06.png" class="img-thumbnail">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente07.png" class="img-thumbnail">
+            <div class="row mt-4">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente07.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente08.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente09.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente10.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente11.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente12.png" class="img-thumbnail">
+                </div>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente08.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente09.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente10.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente11.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente12.png" class="img-thumbnail">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente13.png" class="img-thumbnail">
+            <div class="row mt-4">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente13.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente14.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente15.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente16.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente17.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente18.png" class="img-thumbnail">
+                </div>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente14.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente15.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente16.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente17.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente18.png" class="img-thumbnail">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente19.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente20.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente21.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="images/clientes/cliente22.png" class="img-thumbnail">
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                <img src="" class="img-thumbnail">
+            <div class="row mt-4">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente19.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente20.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente21.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="images/clientes/cliente22.png" class="img-thumbnail">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                    <img src="" class="img-thumbnail">
+                </div>
             </div>
         </div>
 
@@ -195,7 +290,7 @@
             </div>
 
             <!-- <div class="card-columns"> -->
-            <div class="card who col-xl-4 col-lg-4 col-md-4 col-sm-8 col-8">
+            <div class="card who col-xl-4 col-lg-4 col-md-4 col-sm-8 col-8 mt-4">
                 <div class="card-header">
                     <img src="images/quienes_somos/Martin.jpg" alt="Picture" class="card-img-top">
                 </div>
@@ -215,7 +310,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card who col-xl-4 col-lg-4 col-md-4 col-sm-8 col-8">
+            <div class="card who col-xl-4 col-lg-4 col-md-4 col-sm-8 col-8 mt-4">
                 <div class="card-header">
                     <img src="images/quienes_somos/Fabio.jpg" alt="Picture" class="card-img-top">
                 </div>
@@ -241,8 +336,8 @@
         <div class="row contact justify-content-around">
             <img src="images/contacto.jpg" class="img-fluid">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 first-column">
-                <p class="title-left">¿TENÉS UNA IDEA PARA </br> DESARROLLAR? ¿UN PROYECTO </br> PARA REALIZAR? </br>
-                    ¿CONTENIDO PARA DISTRIBUIR?</p>
+                <p class="title-left">¿Tenés una idea para </br> desarrollar? ¿Un proyecto </br> para realizar? </br>
+                    ¿Contenido para distribuir?</p>
                 <p class="subtitle-left">
                     Déjanos tus datos y te contactaremos </br> a la brevedad:
                 </p>
@@ -275,8 +370,7 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
-                            <button type="submit"
-                                class="btn home btn-block text-white rounded-pill mt-2">ENVIAR</button>
+                            <button type="submit" class="btn btn-block text-white rounded-pill mt-2">ENVIAR</button>
                         </div>
                     </div>
                 </form>

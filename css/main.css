@@ -3,12 +3,47 @@ body {
     font-style: normal;
     font-weight: 700;
     width: 100%;
-    /* margin-top: 10px; */
+    /* margin: 0; */
+    margin-top: 10px;
+    /* margin-left: 15px; */
+    overflow-x: hidden;
 }
 
+.logo {
+    background: transparent url('../images/logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.navbar-color {
+    background-color: #171717;
+}
+
+.navbar-item {
+    font: Bold var(--unnamed-font-size-20)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Bold Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.boutique-font {
+    font: ExtraBlack 100px/var(--unnamed-line-spacing-110) var(--unnamed-font-family-balboa);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: ExtraBlack 100px/110px Balboa;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+
 .home {
-    background-color: orange;
-    /* height: 900px; */
+    /* background-color: orange; */
+    background: url('../images/home-naranja-degrade.jpg');
 }
 
 .poppins-title {
@@ -35,7 +70,7 @@ li.option {
 .home-image {
     margin-right: -15px;
     padding: 50px 0 100px 0;
-    max-height: 500px;
+    max-height: 674px;
     width: 100%;
 }
 
@@ -43,6 +78,7 @@ li.option {
     position: relative;
     display: inline-block;
     border-top: 5px solid burlywood;
+    max-height: 650px;
 }
 
 .slide .title-left {
@@ -58,7 +94,7 @@ li.option {
 .slide .subtitle-left {
     color: white;
     text-align: left;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     position: absolute;
     bottom: 15%;
     left: 10%;
@@ -78,22 +114,49 @@ li.option {
 .slide .subtitle-right {
     color: white;
     text-align: right;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     position: absolute;
     bottom: 15%;
     left: 0;
     right: 10%;
 }
 
-.client-title {
-    padding: 20px 0;
-    font-size: 3vw;
-
-}
-
 .img-thumbnail {
     border: 0 none;
     box-shadow: none;
+}
+
+.destacados {
+    padding: 30px 0 40px 0;
+    background-color: #FF8F00;
+}
+
+.destacados-title {
+    padding-top: 20px;
+    font-size: 3vw;
+}
+
+.destacados .descargar {
+    border: 2px solid var(--unnamed-color-ffffff);
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    opacity: 1;
+    font-size: 1.4vw;
+    padding: 10px;
+    color: white;
+}
+
+.destacados a:hover {
+    text-decoration: none;
+}
+
+.clients {
+    margin: 30px 0 40px 0;
+}
+
+.client-title {
+    padding-top: 10px;
+    font-size: 3vw;
 }
 
 .who {
@@ -102,7 +165,7 @@ li.option {
 }
 
 .who-title {
-    padding: 20px 0;
+    padding: 10px 0;
     color: white;
     font-size: 3vw;
 }
@@ -112,7 +175,7 @@ li.option {
 }
 
 .card-body h4.card-title {
-    color: orange;
+    color: #FF8F00;
 }
 
 .contact {
@@ -145,4 +208,8 @@ li.option {
     text-align: left;
     font-size: 1.7vw;
     padding-top: 2%;
+}
+
+.contact button[type="submit"] {
+    background-color: #FF8F00;
 }

@@ -213,3 +213,35 @@ li.option {
 .contact button[type="submit"] {
     background-color: #FF8F00;
 }
+
+.footer {
+    background: var(--unnamed-color-171717) 0% 0% no-repeat padding-box;
+    background: #171717 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.footer .logo {
+    padding-left: 30px;
+}
+
+.footer .link {
+    font: Regular var(--unnamed-font-size-20)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: Regular Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.footer li>a.link {
+    padding-bottom: 25px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}

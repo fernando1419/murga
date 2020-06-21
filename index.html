@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/colorbox.css" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.colorbox.js"></script>
@@ -343,34 +343,35 @@
                 </p>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 second-column">
-                <form role="form">
+                <form role="form" name="contact-form" id="contact-form" method="POST" action="contact.php">
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
                             <input type="text" class="form-control form-control-sm rounded-lg"
-                                placeholder="Nombre y Apellido" id="name">
+                                placeholder="Nombre y Apellido" name="name" id="name" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
                             <input type="email" class="form-control form-control-sm rounded-lg" placeholder="Mail"
-                                id="email">
+                                name="email" id="email" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
                             <input type="text" class="form-control form-control-sm rounded-lg" placeholder="Asunto"
-                                id="asunto">
+                                name="asunto" id="asunto" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
                             <textarea type="text" class="form-control form-control-sm rounded-lg" rows="6" cols="20"
-                                placeholder="Tu mensaje" id="message"></textarea>
+                                placeholder="Tu mensaje" name="message" id="message" required></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-9 col-10">
-                            <button type="submit" class="btn btn-block text-white rounded-pill mt-2">ENVIAR</button>
+                            <button type="submit" name="enviar"
+                                class="btn btn-block text-white rounded-pill mt-2">ENVIAR</button>
                         </div>
                     </div>
                 </form>

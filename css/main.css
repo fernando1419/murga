@@ -357,9 +357,9 @@ input:required:valid {
     font-size: 1vw;
 }
 
-.footer li>a.link {
+/* .footer li>a.link {
     padding-bottom: 25px;
-}
+} */
 
 .footer a:hover {
     text-decoration: none;

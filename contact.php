@@ -18,11 +18,11 @@ if (isset($name) && isset($email) && isset($asunto) && isset($message) && isset(
     $texto = "Recibiste un mail de ". $name . ".\n\n" . $message;
 
     // Send Email
-    $send = mail($to, $asunto, $texto, $headers);
-
-    if ($send) {
+    if (mail($to, $asunto, $texto, $headers)) {
         echo "</br>";
         echo "Gracias por contactarnos. Nos comunicaremos con Ud. a la brevedad!.";
+        header('Location: index.html');
+        exit;
     } else {
         echo "Error al enviar el email";
     }

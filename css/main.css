@@ -342,14 +342,11 @@ input:required:valid {
     opacity: 1;
 }
 
-.footer .logo {
-    padding-left: 30px;
+#footer-logo-murga {
+    padding-left: 100px;
 }
 
 .footer .link {
-    /* font: Regular var(--unnamed-font-size-20)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-poppins); */
-    /* letter-spacing: var(--unnamed-character-spacing-0); */
-    /* color: var(--unnamed-color-ffffff); */
     text-align: left;
     font: PoppinsRegular;
     letter-spacing: 0px;
@@ -357,6 +354,7 @@ input:required:valid {
     color: #FFFFFF;
     text-transform: capitalize;
     opacity: 1;
+    font-size: 1vw;
 }
 
 .footer li>a.link {
